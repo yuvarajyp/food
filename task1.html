@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Ordering System</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      /*background-image: url("data:image/jpeg;base64,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");
+      background-repeat: no-repeat;
+      background-size: 100%;*/
+    
+      
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+
+    }
+
+    th, td {
+      border: 2px solid rgb(255, 153, 0);
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color:blueviolet">Food Ordering System</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Food Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dosa</td>
+        <td>50</td>
+        <td><input type="number" id="quantity1" value="0"></td>
+        <td id="total-price1">0</td>
+      </tr>
+      <tr>
+        <td>Idly</td>
+        <td>15</td>
+        <td><input type="number" id="quantity2" value="0"></td>
+        <td id="total-price2">0</td>
+      </tr>
+      <tr>
+        <td>Poori</td>
+        <td>30</td>
+        <td><input type="number" id="quantity3" value="0"></td>
+        <td id="total-price3">0</td>
+      </tr>
+      <tr>
+        <td>Pongal</td>
+        <td>40</td>
+        <td><input type="number" id="quantity4" value="0"></td>
+        <td id="total-price4">0</td>
+      </tr>
+      <tr>
+        <td>Vadai</td>
+        <td>10</td>
+        <td><input type="number" id="quantity5" value="0"></td>
+        <td id="total-price5">0</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3">Total:</th>
+        <td id="grand-total" style="color:red"><b>0</b></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  
+
+  <script>
+    function calculateTotalPrice() {
+      // Get the quantities of each food item.
+      var quantity1 = parseInt(document.getElementById("quantity1").value);
+      var quantity2 = parseInt(document.getElementById("quantity2").value);
+      var quantity3 = parseInt(document.getElementById("quantity3").value);
+      var quantity4 = parseInt(document.getElementById("quantity4").value);
+      var quantity5 = parseInt(document.getElementById("quantity5").value);
+
+      // Calculate the total price of each food item.
+      var total1 = 50 * quantity1;
+      var total2 = 15 * quantity2;
+      var total3 = 30 * quantity3;
+      var total4 = 40 * quantity4;
+      var total5 = 10 * quantity5;
+
+      // Calculate the grand total.
+      var grandTotal = total1 + total2 + total3 + total4 + total5;
+
+      // Display the total prices.
+      document.getElementById("total-price1").innerHTML = total1;
+      document.getElementById("total-price2").innerHTML = total2;
+      document.getElementById("total-price3").innerHTML = total3;
+      document.getElementById("total-price4").innerHTML = total4;
+      document.getElementById("total-price5").innerHTML = total5;
+      document.getElementById("grand-total").innerHTML = grandTotal;
+    }
+
+    // Calculate the total price when the quantity of any food item changes.
+    document.getElementById("quantity1").addEventListener("change", calculateTotalPrice);
+    document.getElementById("quantity2").addEventListener("change", calculateTotalPrice);
+    document.getElementById("quantity3").addEventListener("change", calculateTotalPrice);
+    document.getElementById("quantity4").addEventListener("change", calculateTotalPrice);
+    document.getElementById("quantity5").addEventListener("change", calculateTotalPrice);
+  </script>
+  <center><p style="font-size: larger;"><b>THANK YOU FOR VISITING!!!</b></p></center>
+</body>
+</html>
+
